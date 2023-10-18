@@ -20,6 +20,9 @@ app.use(express.static(__dirname + '/public'))
 // URLエンコード
 app.use(express.urlencoded({ extended: true }))
 
+// EJSを利用
+app.set('view engine', 'ejs')
+
 // ルーティングを有効
 app.use(routes)
 
