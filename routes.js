@@ -18,7 +18,8 @@ router.get('/', (req, res) => {
 })
 
 router.get('/profile', (req, res) => {
-    res.send('プロフィール')
+    // res.send('プロフィール')
+    res.render("profile")
 })
 
 // /item/xxx のルーティング（パスパラメーター）
